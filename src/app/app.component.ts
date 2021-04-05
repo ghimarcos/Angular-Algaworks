@@ -14,7 +14,7 @@ export class AppComponent {
   nome = "Ana";
   adicionado = false;
   //cria um array para adicionar os elementos do *ngFor
-  funcionarios = [];
+  funcionarios : any[] = [];
   //evento adicionar que está no botão do html com metodo (click)
   adicionar() {
     console.log(`Adicionando ${this.nome}`)
