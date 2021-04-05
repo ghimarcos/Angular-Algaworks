@@ -10,13 +10,12 @@ import {NgbAlertConfig} from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
     nome = "Giovani";
+    adicionado = false;
 
     //evento adicionar que está no botão do html com metodo (click)
     adicionar(){
     console.log(`Adicionando ${this.nome}`)
-
-    const numero = Math.round(Math.random() * 100)
-    this.nome = 'João' + numero
+      this.adicionado = true;
     }
 
 }
